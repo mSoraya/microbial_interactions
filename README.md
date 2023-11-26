@@ -3,3 +3,5 @@ This function explores which commonly consumed metabolites two species have the 
 Also, check the possibility of parasitic and commensal interactions for each given-consumer metabolites between two species.
 INPUT:
 model:  COBRA model structure
+
+Call PairwiseInteraction() function with two model.
