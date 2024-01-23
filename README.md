@@ -5,6 +5,7 @@ Also, check the possibility of parasitic and commensal interactions for each giv
 % INPUT:
 
 %    model:       A community COBRA model structure with the following fields
+
                     S - Stoichiometric matrix
                     b - Right hand side
                     c - Objective coefficients
