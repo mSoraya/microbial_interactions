@@ -9,9 +9,7 @@ Also, check the possibility of parasitic and commensal interactions for each giv
                     S - Stoichiometric matrix
                     b - Right hand side
                     c - Objective coefficients
-                    
                     lb - Lower bounds
-                    
                     ub - Upper bounds
                     
 Call PairwiseInteraction() function with two model.
