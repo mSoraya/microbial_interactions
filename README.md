@@ -12,4 +12,10 @@ Also, check the possibility of parasitic and commensal interactions for each giv
                     lb - Lower bounds
                     ub - Upper bounds
                     
-Call PairwiseInteraction() function with two model.
+% OUTPUTS:
+% CompeteList: List of metabolites  which two species compete.
+%Commensal_species1 : List of metabolites that species2 demans from species1. ("1 can provide (commensal), 0 cannot ")
+%Commensal_species2 : List of metabolites that species1 demans from species2. 
+
+                    
+[CompeteList, Commensal_species1,Commensal_species2]  = PairwiseInteraction(model1,model2); Call function with two model.
