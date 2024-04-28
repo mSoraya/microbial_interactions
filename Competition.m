@@ -25,6 +25,31 @@ ub(1,n+1:n_v)=1;
 ub(1,v1)=0;
 ub(1,v2)=0;
 
+%inactive the revesre of reaction v1 & v2
+str=model.rxns(v1);
+newStr = extractBetween(model.rxns(v1),'_e_','_species');
+if(strcmp(newStr,'b'))
+    replace(str,strcat('_',newStr,'_'),'_f_');
+    t=find(strcmp(model.rxns,replace(str,strcat('_',newStr,'_'),'_f_')));
+    ub(t)=0;
+elseif(strcmp(newStr,'f'))
+    replace(str,strcat('_',newStr,'_'),'_b_');
+    t=find(strcmp(model.rxns,replace(str,strcat('_',newStr,'_'),'_b_')));
+    ub(t)=0;
+end
+
+str=model.rxns(v2);
+newStr = extractBetween(model.rxns(v2),'_e_','_species');
+if(strcmp(newStr,'b'))
+    replace(str,strcat('_',newStr,'_'),'_f_');
+    t=find(strcmp(model.rxns,replace(str,strcat('_',newStr,'_'),'_f_')));
+    ub(t)=0;
+elseif(strcmp(newStr,'f'))
+    replace(str,strcat('_',newStr,'_'),'_b_');
+    t=find(strcmp(model.rxns,replace(str,strcat('_',newStr,'_'),'_b_')));
+    ub(t)=0;
+end
+
 A=zeros(length(Exs)+1,n_v);
 b=zeros(1,length(Exs)+1);
 
