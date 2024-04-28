@@ -4,7 +4,7 @@ Also, check the possibility of parasitic and commensal interactions for each giv
 
 % INPUT:
 
-%    model:       A community COBRA model structure with the following fields
+ model:       A community COBRA model structure with the following fields
 
                     S - Stoichiometric matrix
                     b - Right hand side
@@ -12,10 +12,13 @@ Also, check the possibility of parasitic and commensal interactions for each giv
                     lb - Lower bounds
                     ub - Upper bounds
                     
-% OUTPUTS:
-% CompeteList: List of metabolites  which two species compete.
-%Commensal_species1 : List of metabolites that species2 demans from species1. ("1 can provide (commensal), 0 cannot ")
-%Commensal_species2 : List of metabolites that species1 demans from species2. 
+ % OUTPUTS:
+ 
+         CompeteList: List of metabolites  which two species compete.
+         Commensal_species1 : List of metabolites that species2 demans from species1. ("1 can provide (commensal), 0 cannot ")
+         Commensal_species2 : List of metabolites that species1 demans from species2. 
+
+                    
 
                     
 [CompeteList, Commensal_species1,Commensal_species2]  = PairwiseInteraction(model1,model2); Call function with two model.
