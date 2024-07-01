@@ -1,4 +1,5 @@
-![Striking-image](https://github.com/mirzaei-s/microbial_interactions/assets/150903671/fd1ae370-aebc-432e-a7ab-1b01d07fc4b3)
+![Striking-image](https://github.com/mirzaei-s/microbial_interactions/assets/150903671/98da836b-e0b4-41c7-b7af-e7f2f984c45b)
+
 # microbial_piarwise_interactions
 This function explores which commonly consumed metabolites two species have the potential to compete for. the results represnt as competition rate.
 Also, check the possibility of parasitic and commensal interactions for each given-consumer metabolites between two species.
