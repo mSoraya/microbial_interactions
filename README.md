@@ -24,3 +24,9 @@ Also, check the possibility of parasitic and commensal interactions for each giv
 
                     
 [CompeteList, Commensal_species1,Commensal_species2]  = PairwiseInteraction(model1,model2); Call function with two model.
+
+# Citation
+This repository contains the code and configuration files reproducing the study cases described in (please, cite us if you use it in your work):
+
+    Mirzaei, Soraya, and Mojtaba Tefagh. "GEM-based computational modeling for exploring metabolic interactions in a microbial community." PLOS Computational Biology 20.6 (2024): e1012233.
+
